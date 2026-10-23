@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Weds Akanksha | शुभ विवाह आमंत्रण (26 Nov – 03 Dec 2026)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rozha+One&family=Yatra+One&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        royal: {
+                            maroon: '#2D070D',
+                            crimson: '#4A0E17',
+                            gold: '#D4AF37',
+                            goldLight: '#F5E1A4',
+                            goldDark: '#996515',
+                            ivory: '#FDFBF7',
+                            emerald: '#063B2A'
+                        }
+                    },
+                    fontFamily: {
+                        royal: ['"Cinzel Decorative"', 'serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        script: ['"Great Vibes"', 'cursive'],
+                        hindi: ['"Rozha One"', '"Yatra One"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --bg-primary: #2D070D;
+            --bg-secondary: #4A0E17;
+            --gold-accent: #D4AF37;
+            --gold-light: #F5E1A4;
+        }
+        body {
+            background-color: var(--bg-primary);
+            background-image:
+                radial-gradient(circle at 18% 15%, rgba(212, 175, 55, 0.14) 0%, transparent 45%),
+                radial-gradient(circle at 82% 80%, rgba(212, 175, 55, 0.12) 0%, transparent 50%),
+                linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, #1F0408 100%);
+            color: #FDFBF7;
+            overflow-x: hidden;
+        }
+        .gold-text {
+            background: linear-gradient(135deg, #FFF3B0 0%, #D4AF37 45%, #AA771C 75%, #FDF0A6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-btn {
+            background: linear-gradient(135deg, #D4AF37 0%, #F5E1A4 50%, #AA771C 100%);
+            color: #2D070D;
+            font-weight: 700;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+            transition: all 0.25s ease;
+        }
+        .gold-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.55);
+        }
+        .ornate-card {
+            background: linear-gradient(160deg, rgba(74, 14, 23, 0.92) 0%, rgba(35, 5, 10, 0.96) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.42);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55), inset 0 0 25px rgba(212, 175, 55, 0.08);
+        }
+        .phone-frame {
+            width: 340px;
+            height: 615px;
+            border-radius: 44px;
+            border: 6px solid #D4AF37;
+            box-shadow:
+                0 0 0 3px #3B0910,
+                0 25px 70px rgba(0, 0, 0, 0.85),
+                0 0 45px rgba(212, 175, 55, 0.28);
+            position: relative;
+            overflow: hidden;
+            background: #230408;
+        }
+        @media (min-width: 640px) {
+            .phone-frame {
+                width: 365px;
+                height: 650px;
+            }
+        }
+        .palace-gate-left, .palace-gate-right {
+            transition: transform 1.4s cubic-bezier(0.77, 0, 0.175, 1);
+            background: linear-gradient(160deg, #4E0D16 0%, #260409 100%);
+            border-color: #D4AF37;
+        }
+        .gates-open .palace-gate-left {
+            transform: translateX(-102%);
+        }
+        .gates-open .palace-gate-right {
+            transform: translateX(102%);
+        }
+        .reel-scene {
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(0.95) translateY(10px);
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+        .reel-scene.active {
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1) translateY(0);
+        }
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spinSlow 28s linear infinite;
+        }
+        @keyframes floatGentle {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-float {
+            animation: floatGentle 3.5s ease-in-out infinite;
+        }
+
+        /* Refined pointer-following gold glow (desktop only); never blocks taps. */
+        #cursorGlow { position:fixed; left:0; top:0; width:240px; height:240px; border-radius:50%; pointer-events:none; z-index:2; opacity:0; transform:translate(-50%,-50%); background:radial-gradient(circle,rgba(245,225,164,.13) 0%,rgba(212,175,55,.06) 35%,transparent 72%); transition:opacity .25s ease; }
+        @media (hover:hover) and (pointer:fine) { #cursorGlow { opacity:1; } }
+        @media (hover:none), (pointer:coarse) { #cursorGlow { display:none; } }
+        @media (max-width: 639px) { .phone-frame { width:min(100%,340px); height:min(615px, calc(100svh - 150px)); min-height:540px; border-radius:32px; } body { background-attachment:scroll; } }
+        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } #petalCanvas { display:none; } }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-royal-gold selection:text-royal-maroon">
+
+    <!-- User-provided wedding bhajan. Browsers require a tap before audio can start. -->
+    <audio id="weddingMusic" src="wedding-bhajan.mp3" preload="metadata" loop></audio>
+    <div id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- Floating Gold Particles Canvas -->
+    <canvas id="petalCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-65"></canvas>
+
+    <!-- Top Sticky Navigation Bar -->
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-[#230408]/85 border-b border-royal-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full border-2 border-royal-gold bg-royal-crimson flex items-center justify-center font-royal font-bold text-royal-gold text-sm shadow">
+                    <span id="navMonogram">A &amp; A</span>
+                </div>
+                <div>
+                    <p class="font-royal text-sm sm:text-base font-bold gold-text tracking-wider" id="navCoupleTitle">Ashutosh &amp; Akanksha</p>
+                    <p class="text-[11px] text-royal-goldLight/80 font-hindi">शुभ विवाह • 26 नवम्बर – 03 दिसम्बर 2026</p>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-6 text-xs uppercase tracking-widest text-royal-ivory/85 font-medium">
+                <a href="#video-invite" class="hover:text-royal-gold transition">9:16 Video Invite</a>
+                <a href="#events-itinerary" class="hover:text-royal-gold transition">5 Events &amp; Tithis</a>
+                <a href="#panchang-table" class="hover:text-royal-gold transition">Schedule Table</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO SECTION: 9:16 INTERACTIVE VIDEO INVITATION REEL + COUPLE OVERVIEW -->
+    <section id="video-invite" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-16 lg:py-14">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+
+            <!-- Left Column: Auspicious Wedding Introduction & Quick Summary -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-royal-gold/15 border border-royal-gold/40 text-royal-goldLight text-xs sm:text-sm font-hindi">
+                    <span>॥ श्री गणेशाय नमः ॥</span>
+                    <span class="text-royal-gold">•</span>
+                    <span>॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ॥</span>
+                </div>
+
+                <div class="space-y-2">
+                    <p class="text-xs sm:text-sm uppercase tracking-[0.3em] text-royal-goldLight/90 font-semibold">
+                        मंगल परिणय निमंत्रण • Royal Wedding Invitation
+                    </p>
+                    <h1 class="font-royal text-4xl sm:text-6xl font-bold leading-tight">
+                        <span class="gold-text" id="heroGroom">Ashutosh</span>
+                        <span class="font-script text-3xl sm:text-5xl text-royal-goldLight mx-2 font-normal">weds</span>
+                        <span class="gold-text" id="heroBride">Akanksha</span>
+                    </h1>
+                    <p class="font-hindi text-2xl sm:text-3xl text-royal-goldLight pt-1">
+                        आशुतोष <span class="text-royal-gold text-xl mx-1">संग</span> आकांक्षा
+                    </p>
+                </div>
+
+                <p class="text-sm sm:text-base text-royal-ivory/85 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    With the divine blessings of Lord Ganesha and our revered ancestors, we cordially invite you and your family to grace the auspicious wedding festivities of <strong class="text-royal-goldLight">Ashutosh &amp; Akanksha</strong> (<span id="heroHashtag" class="text-royal-gold font-semibold">#AshuKiAkanksha</span>) in <strong class="text-white">Satna, Madhya Pradesh</strong>.
+                </p>
+
+                <!-- Quick Highlight Pills for All 5 Events with Exact Timings -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left max-w-2xl mx-auto lg:mx-0">
+                    <!-- Pill 1 -->
+                    <div onclick="jumpToScene(2)" class="cursor-pointer p-3.5 rounded-2xl bg-black/35 border border-royal-gold/30 hover:border-royal-gold transition flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-royal-gold/20 border border-royal-gold/50 flex items-center justify-center text-royal-gold shrink-0 mt-0.5">
+                            <i class="fa-solid fa-bowl-food"></i>
+                        </div>
+                        <div class="text-xs">
+                            <p class="font-hindi font-bold text-royal-goldLight text-sm">1. तिलकोत्सव एवं प्रीतिभोज</p>
+                            <p class="text-white font-semibold">Thu, 26 Nov 2026 • Time: 7:00 PM onwards</p>
+                            <p class="font-hindi text-amber-200/90 text-[11px] mt-0.5">तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – तृतीया (सायंकाल) | Sangam Marriage Garden, Satna</p>
+                        </div>
+                    </div>
+
+                    <!-- Pill 2: Maati-Mangar & Mandap (Time: 04:00 PM) -->
+                    <div onclick="jumpToScene(3)" class="cursor-pointer p-3.5 rounded-2xl bg-black/35 border border-emerald-400/40 hover:border-emerald-300 transition flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-400/50 flex items-center justify-center text-emerald-300 shrink-0 mt-0.5">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <div class="text-xs">
+                            <p class="font-hindi font-bold text-emerald-200 text-sm">2. माटीमागर एवं मण्डप (Maati-Mangar &amp; Mandap)</p>
+                            <p class="text-white font-bold" id="pill2Time">Mon, 30 Nov 2026 • Time: 04:00 PM</p>
+                            <p class="font-hindi text-amber-200/90 text-[11px] mt-0.5">तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – सप्तमी</p>
+                        </div>
+                    </div>
+
+                    <!-- Pill 3: Mantri Pooja (04:00 PM), Haldi (10:00 AM) & Mehndi (12:00 PM) -->
+                    <div onclick="jumpToScene(4)" class="cursor-pointer p-3.5 rounded-2xl bg-black/35 border border-amber-400/45 hover:border-amber-300 transition flex items-start gap-3 sm:col-span-2">
+                        <div class="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-400/50 flex items-center justify-center text-amber-300 shrink-0 mt-0.5">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                        <div class="text-xs flex-1">
+                            <div class="flex flex-wrap items-center justify-between gap-1">
+                                <p class="font-hindi font-bold text-amber-300 text-sm">3. मंत्रीपूजा, हल्दी एवं मेहंदी (Mantri Pooja, Haldi &amp; Mehndi) — Tue, 1 Dec 2026</p>
+                                <span class="font-hindi text-amber-200 text-[11px] px-2 py-0.5 rounded bg-amber-500/20 border border-amber-400/30">तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – अष्टमी</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mt-2" id="pill3Timings">
+                                <span class="px-2.5 py-1 rounded-lg bg-amber-400/20 border border-amber-300/40 text-amber-200 font-semibold">🌼 Haldi (हल्दी) — Time: 10:00 AM</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-emerald-400/20 border border-emerald-300/40 text-emerald-200 font-semibold">🌿 Mehndi (मेहंदी) — Time: 12:00 PM</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-royal-gold/25 border border-royal-gold/50 text-royal-goldLight font-semibold">🪔 Mantri Pooja (मंत्रीपूजा) — Time: 04:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pill 4: Shubh Vivah -->
+                    <div onclick="jumpToScene(5)" class="cursor-pointer p-3.5 rounded-2xl bg-royal-gold/15 border border-royal-gold/60 hover:border-royal-gold transition flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-royal-gold text-royal-maroon flex items-center justify-center shrink-0 mt-0.5">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                        <div class="text-xs">
+                            <p class="font-hindi font-bold text-royal-gold text-sm">4. शुभविवाह (Shubh Vivah)</p>
+                            <p class="text-white font-semibold">Wed, 2 Dec 2026 • Barat departs: 6:00 PM</p>
+                            <p class="font-hindi text-amber-200 text-[11px] mt-0.5">तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – नवमी | Venkatesh Vatika, Satna</p>
+                        </div>
+                    </div>
+
+                    <!-- Pill 5: Vadhu Pravesh -->
+                    <div onclick="jumpToScene(6)" class="cursor-pointer p-3.5 rounded-2xl bg-black/35 border border-rose-400/35 hover:border-rose-300 transition flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-rose-500/20 border border-rose-300/50 flex items-center justify-center text-rose-200 shrink-0 mt-0.5">
+                            <i class="fa-solid fa-house-chimney-heart"></i>
+                        </div>
+                        <div class="text-xs">
+                            <p class="font-hindi font-bold text-rose-200 text-sm">5. वधू प्रवेश (Vadhu Pravesh)</p>
+                            <p class="text-white font-semibold">Thu, 3 Dec 2026 • Village: Devra, Satna</p>
+                            <p class="font-hindi text-amber-200/90 text-[11px] mt-0.5">तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – दशमी</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Countdown Timer to Shubh Vivah (2 Dec 2026, 6:00 PM) -->
+                <div class="pt-2">
+                    <p class="text-xs uppercase tracking-widest text-royal-goldLight/75 mb-2.5">
+                        Countdown to Shubh Vivah • बुधवार, 02 दिसम्बर 2026 (सायं 06:00 बजे)
+                    </p>
+                    <div class="grid grid-cols-4 gap-2.5 max-w-md mx-auto lg:mx-0">
+                        <div class="ornate-card rounded-2xl py-2.5 px-3 text-center">
+                            <span id="cdDays" class="font-royal text-2xl sm:text-3xl font-bold gold-text">00</span>
+                            <p class="text-[10px] uppercase tracking-wider text-royal-ivory/70">Days</p>
+                        </div>
+                        <div class="ornate-card rounded-2xl py-2.5 px-3 text-center">
+                            <span id="cdHours" class="font-royal text-2xl sm:text-3xl font-bold gold-text">00</span>
+                            <p class="text-[10px] uppercase tracking-wider text-royal-ivory/70">Hours</p>
+                        </div>
+                        <div class="ornate-card rounded-2xl py-2.5 px-3 text-center">
+                            <span id="cdMins" class="font-royal text-2xl sm:text-3xl font-bold gold-text">00</span>
+                            <p class="text-[10px] uppercase tracking-wider text-royal-ivory/70">Minutes</p>
+                        </div>
+                        <div class="ornate-card rounded-2xl py-2.5 px-3 text-center">
+                            <span id="cdSecs" class="font-royal text-2xl sm:text-3xl font-bold gold-text">00</span>
+                            <p class="text-[10px] uppercase tracking-wider text-royal-ivory/70">Seconds</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+                    <a href="#events-itinerary" class="px-6 py-3 rounded-full gold-btn text-xs sm:text-sm uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>View All 5 Events &amp; Tithis</span>
+                    </a>
+                    <button onclick="shareOnWhatsApp()" class="px-5 py-3 rounded-full bg-emerald-700/80 hover:bg-emerald-600 border border-emerald-400/50 text-white text-xs sm:text-sm font-semibold transition flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Share Invite on WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: 9:16 Vertical Animated Video Invitation Player -->
+            <div class="lg:col-span-5 flex flex-col items-center">
+                <div class="phone-frame" id="reelViewport">
+
+                    <!-- Decorative Rotating Mandala Watermark Inside Phone -->
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-15">
+                        <svg class="w-80 h-80 animate-spin-slow text-royal-gold" viewBox="0 0 200 200" fill="none">
+                            <circle cx="100" cy="100" r="90" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/>
+                            <circle cx="100" cy="100" r="72" stroke="currentColor" stroke-width="1.2"/>
+                            <circle cx="100" cy="100" r="52" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/>
+                            <path d="M100 10 L115 85 L190 100 L115 115 L100 190 L85 115 L10 100 L85 85 Z" stroke="currentColor" stroke-width="1.2"/>
+                            <path d="M36 36 L90 90 M164 36 L110 90 M164 164 L110 110 M36 164 L90 110" stroke="currentColor" stroke-width="1"/>
+                        </svg>
+                    </div>
+
+                    <!-- Top Story Progress Bars (7 Scenes) + Audio Controls -->
+                    <div class="absolute top-0 inset-x-0 z-30 p-3 bg-gradient-to-b from-black/80 via-black/40 to-transparent">
+                        <div class="grid grid-cols-7 gap-1 mb-2.5" id="storyProgressBars">
+                            <div class="h-1 bg-white/25 rounded-full overflow-hidden"><div class="story-fill h-full bg-royal-gold w-0"></div></div>
+                            <div class="h-1 bg-white/25 rounded-full overflow-hidden"><div class="story-fill h-full bg-royal-gold w-0"></div></div>
+                            <div class="h-1 bg-white/25 rounded-full overflow-hidden"><div class="story-fill h-full bg-royal-gold w-0"></div></div>
+                            <div class="h-1 bg-white/25 rounded-full overflow-hidden"><div class="story-fill h-full bg-royal-gold w-0"></div></div>
+                            <div class="h-1 bg-white/25 rounded-full overflow-hidden"><div class="story-fill h-full bg-royal-gold w-0"></div></div>
+                            <div class="h-1 bg-white/25 rounded-full overflow-hidden"><div class="story-fill h-full bg-royal-gold w-0"></div></div>
+                            <div class="h-1 bg-white/25 rounded-full overflow-hidden"><div class="story-fill h-full bg-royal-gold w-0"></div></div>
+                        </div>
+
+                        <div class="flex items-center justify-between px-1">
+                            <div class="flex items-center gap-2">
+                                <span class="w-6 h-6 rounded-full bg-royal-gold text-royal-maroon font-royal font-bold text-[10px] flex items-center justify-center">
+                                    ॐ
+                                </span>
+                                <div class="leading-tight">
+                                    <p class="text-[11px] font-bold text-white" id="reelHeaderTitle">Ashutosh &amp; Akanksha</p>
+                                    <p class="text-[9px] text-royal-goldLight" id="reelSceneIndicator">Scene 1/7 • श्री गणेश वंदना</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-1.5">
+                                <button onclick="toggleAudio()" id="audioToggleBtn" title="Play wedding bhajan" class="px-2.5 h-7 rounded-full bg-black/55 border border-royal-gold/50 text-royal-gold hover:bg-royal-gold hover:text-royal-maroon flex items-center gap-1 transition">
+                                    <i class="fa-solid fa-volume-xmark text-xs" id="audioIcon"></i>
+                                    <span class="text-[9px] font-semibold">Shehnai</span>
+                                </button>
+                                <button onclick="restartReel()" title="Restart Video Invitation" class="w-7 h-7 rounded-full bg-black/55 border border-royal-gold/50 text-royal-gold hover:bg-royal-gold hover:text-royal-maroon flex items-center justify-center transition">
+                                    <i class="fa-solid fa-rotate-left text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Animated Royal Palace Doors Overlay (Opens on Start) -->
+                    <div id="palaceGatesContainer" class="absolute inset-0 z-20 flex pointer-events-none">
+                        <div class="palace-gate-left w-1/2 h-full border-r-2 flex flex-col items-end justify-center pr-3">
+                            <div class="w-10 h-24 rounded-l-full border-2 border-royal-gold/70 bg-royal-gold/10 flex items-center justify-center">
+                                <div class="w-3 h-3 rounded-full bg-royal-gold"></div>
+                            </div>
+                        </div>
+                        <div class="palace-gate-right w-1/2 h-full border-l-2 flex flex-col items-start justify-center pl-3">
+                            <div class="w-10 h-24 rounded-r-full border-2 border-royal-gold/70 bg-royal-gold/10 flex items-center justify-center">
+                                <div class="w-3 h-3 rounded-full bg-royal-gold"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= 7 ANIMATED SCENES ================= -->
+                    <div id="animatedScenesContainer" class="relative w-full h-full">
+
+                        <!-- SCENE 0 (1/7): श्री गणेशाय नमः & Royal Gate Opening -->
+                        <div class="reel-scene active absolute inset-0 flex flex-col items-center justify-center text-center p-6" data-scene="0">
+                            <div class="w-20 h-20 rounded-full bg-royal-gold/15 border-2 border-royal-gold flex items-center justify-center mb-4 shadow-lg animate-float">
+                                <span class="font-hindi text-4xl text-royal-gold">ॐ</span>
+                            </div>
+                            <p class="font-hindi text-xl text-royal-goldLight mb-1">॥ श्री गणेशाय नमः ॥</p>
+                            <p class="font-hindi text-xs text-royal-ivory/80 max-w-[240px] leading-relaxed mb-4">
+                                वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+                            </p>
+                            <div class="w-28 h-0.5 bg-gradient-to-r from-transparent via-royal-gold to-transparent my-2"></div>
+                            <p class="uppercase tracking-[0.25em] text-[10px] text-royal-goldLight mt-2">सादर निमंत्रण • Royal Invitation</p>
+                            <h2 class="font-royal text-2xl font-bold gold-text mt-1">Shubh Vivah</h2>
+                            <p class="font-hindi text-sm text-amber-200 mt-1">26 नवम्बर – 03 दिसम्बर 2026</p>
+                            <p class="text-[11px] text-white/70 mt-1">सतना, मध्यप्रदेश (Satna, M.P.)</p>
+                        </div>
+
+                        <!-- SCENE 1 (2/7): Couple Reveal — Ashutosh Weds Akanksha -->
+                        <div class="reel-scene absolute inset-0 flex flex-col items-center justify-center text-center p-5" data-scene="1">
+                            <div class="w-16 h-16 rounded-full border-2 border-royal-gold bg-royal-crimson/90 flex items-center justify-center font-royal text-lg font-bold text-royal-gold mb-3 shadow-md animate-float">
+                                <span id="scene1Monogram">A &amp; A</span>
+                            </div>
+                            <p class="text-[10px] uppercase tracking-[0.25em] text-royal-goldLight mb-1">With Divine Blessings</p>
+                            <h2 class="font-royal text-3xl font-bold gold-text leading-tight" id="scene1Groom">Ashutosh</h2>
+                            <p class="font-script text-2xl text-royal-goldLight my-0.5">weds</p>
+                            <h2 class="font-royal text-3xl font-bold gold-text leading-tight" id="scene1Bride">Akanksha</h2>
+                            <p class="font-hindi text-lg text-amber-200 mt-1">आशुतोष संग आकांक्षा</p>
+
+                            <div class="mt-4 w-full max-w-[255px] p-3 rounded-2xl bg-black/45 border border-royal-gold/40 space-y-1 text-xs">
+                                <p class="text-royal-gold font-semibold" id="scene1Hashtag">#AshuKiAkanksha</p>
+                                <p class="text-white font-medium">26 Nov – 03 Dec 2026</p>
+                                <p class="font-hindi text-[11px] text-amber-200">तिथि पक्ष: अगहन (मार्गशीर्ष) कृष्ण पक्ष (तृतीया से दशमी, कार्यक्रम के समयानुसार)</p>
+                                <p class="text-[11px] text-royal-ivory/75">Satna, Madhya Pradesh</p>
+                            </div>
+                        </div>
+
+                        <!-- SCENE 2 (3/7): EVENT 1 — तिलकोत्सव एवं प्रीतिभोज (26 Nov 2026 | तृतीया at 7:00 PM) -->
+                        <div class="reel-scene absolute inset-0 flex flex-col items-center justify-center text-center p-5 bg-gradient-to-b from-amber-900/35 via-transparent to-transparent" data-scene="2">
+                            <div class="w-11 h-11 rounded-2xl bg-royal-gold/20 border border-royal-gold flex items-center justify-center text-royal-gold text-lg mb-1.5 animate-float">
+                                <i class="fa-solid fa-bowl-food"></i>
+                            </div>
+                            <span class="px-3 py-0.5 rounded-full bg-royal-gold/20 border border-royal-gold/50 text-[10px] uppercase tracking-wider text-royal-goldLight mb-1">
+                                कार्यक्रम 01 • Event 01
+                            </span>
+                            <h3 class="font-hindi text-2xl font-bold text-royal-goldLight">तिलकोत्सव एवं प्रीतिभोज</h3>
+                            <p class="font-royal text-xs text-royal-gold tracking-wider mb-2.5">Tilakotsav &amp; Preetibhoj</p>
+
+                            <div class="w-full max-w-[270px] p-3.5 rounded-2xl bg-black/60 border border-royal-gold/45 backdrop-blur-sm space-y-2 text-xs text-left">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-regular fa-calendar text-royal-gold mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-semibold text-white">Thursday, 26 November 2026</p>
+                                        <p class="font-hindi text-[11px] text-royal-goldLight">गुरुवार, 26 नवम्बर 2026</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-solid fa-moon text-amber-300 mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-hindi text-amber-200 font-semibold" id="scene2Tithi">Tithi / तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – तृतीया (सायं; द्वितीया दोपहर 1:15 बजे तक)</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-regular fa-clock text-royal-gold w-4"></i>
+                                    <p class="text-white font-semibold" id="scene2Time">Time / समय: Guests invited from 7:00 PM onwards</p>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-solid fa-location-dot text-royal-gold mt-0.5 w-4"></i>
+                                    <p class="text-[11px] text-royal-ivory/95 leading-snug" id="scene2Venue">
+                                        <strong>Venue / स्थान:</strong> Sangam Marriage Garden, Rewa–Satna Road, Bahelia Bhat, Satna
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SCENE 3 (4/7): EVENT 2 — माटीमागर एवं मण्डप (30 Nov 2026 | सप्तमी | Time: 04:00 PM) -->
+                        <div class="reel-scene absolute inset-0 flex flex-col items-center justify-center text-center p-5 bg-gradient-to-b from-emerald-900/45 via-amber-950/30 to-transparent" data-scene="3">
+                            <div class="w-11 h-11 rounded-2xl bg-emerald-500/20 border border-emerald-300 flex items-center justify-center text-emerald-300 text-lg mb-1.5 animate-float">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <span class="px-3 py-0.5 rounded-full bg-emerald-900/80 border border-emerald-300/50 text-[10px] uppercase tracking-wider text-emerald-200 mb-1">
+                                कार्यक्रम 02 • Event 02
+                            </span>
+                            <h3 class="font-hindi text-2xl font-bold text-emerald-200">माटीमागर एवं मण्डप</h3>
+                            <p class="font-royal text-xs text-royal-goldLight tracking-wider mb-2.5">Maati-Mangar &amp; Mandap</p>
+
+                            <div class="w-full max-w-[270px] p-3.5 rounded-2xl bg-black/60 border border-emerald-400/45 backdrop-blur-sm space-y-2 text-xs text-left">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-regular fa-calendar text-emerald-300 mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-semibold text-white">Monday, 30 November 2026</p>
+                                        <p class="font-hindi text-[11px] text-emerald-200">सोमवार, 30 नवम्बर 2026</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-solid fa-moon text-amber-300 mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-hindi text-amber-200 font-semibold" id="scene3Tithi">Tithi / तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – सप्तमी</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-regular fa-clock text-emerald-300 mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="text-white font-bold" id="scene3Time">Time / समय: 04:00 PM</p>
+                                        <p class="text-[11px] text-emerald-200 font-hindi">माटीमागर एवं मण्डप (सायं 04:00 बजे)</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-solid fa-house-chimney text-emerald-300 mt-0.5 w-4"></i>
+                                    <p class="text-[11px] text-royal-ivory/95 leading-snug" id="scene3Venue">
+                                        <strong>Venue / स्थान:</strong> Family Residence (निज निवास)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SCENE 4 (5/7): EVENT 3 — मंत्रीपूजा (04:00 PM), हल्दी (10:00 AM) एवं मेहंदी (12:00 PM) (01 Dec 2026 | अष्टमी) -->
+                        <div class="reel-scene absolute inset-0 flex flex-col items-center justify-center text-center p-5 bg-gradient-to-b from-yellow-500/25 via-amber-800/35 to-transparent" data-scene="4">
+                            <div class="w-11 h-11 rounded-2xl bg-amber-400/25 border border-amber-300 flex items-center justify-center text-amber-300 text-lg mb-1 animate-float">
+                                <i class="fa-solid fa-sun"></i>
+                            </div>
+                            <span class="px-3 py-0.5 rounded-full bg-amber-500/25 border border-amber-300/50 text-[10px] uppercase tracking-wider text-amber-200 mb-0.5">
+                                कार्यक्रम 03 • Event 03
+                            </span>
+                            <h3 class="font-hindi text-xl sm:text-2xl font-bold text-amber-300">मंत्रीपूजा, हल्दी एवं मेहंदी</h3>
+                            <p class="font-royal text-[11px] text-amber-100 tracking-wider mb-2">Mantri Pooja, Haldi &amp; Mehndi</p>
+
+                            <div class="w-full max-w-[272px] p-3 rounded-2xl bg-black/65 border border-amber-400/45 backdrop-blur-sm space-y-1.5 text-xs text-left">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-regular fa-calendar text-amber-300 mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-semibold text-white">Tuesday, 1 December 2026</p>
+                                        <p class="font-hindi text-[11px] text-amber-200">मंगलवार, 01 दिसम्बर 2026</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1 border-t border-white/10">
+                                    <i class="fa-solid fa-moon text-amber-300 mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-hindi text-amber-200 font-semibold" id="scene4Tithi">Tithi / तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – अष्टमी</p>
+                                    </div>
+                                </div>
+                                <div class="pt-1 border-t border-white/10 space-y-1" id="scene4TimeBlock">
+                                    <p class="text-[10px] uppercase tracking-wider text-amber-300 font-semibold">Time / समय:</p>
+                                    <div class="flex items-center justify-between text-[11px] bg-amber-500/20 px-2.5 py-1 rounded border border-amber-300/35">
+                                        <span class="font-hindi text-amber-200 font-medium">🌼 Haldi (हल्दी):</span>
+                                        <span class="font-bold text-white">10:00 AM</span>
+                                    </div>
+                                    <div class="flex items-center justify-between text-[11px] bg-emerald-500/20 px-2.5 py-1 rounded border border-emerald-300/35">
+                                        <span class="font-hindi text-emerald-200 font-medium">🌿 Mehndi (मेहंदी):</span>
+                                        <span class="font-bold text-white">12:00 PM</span>
+                                    </div>
+                                    <div class="flex items-center justify-between text-[11px] bg-royal-gold/25 px-2.5 py-1 rounded border border-royal-gold/45">
+                                        <span class="font-hindi text-royal-goldLight font-medium">🪔 Mantri Pooja (मंत्रीपूजा):</span>
+                                        <span class="font-bold text-white">04:00 PM</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1 border-t border-white/10">
+                                    <i class="fa-solid fa-house-chimney text-amber-300 mt-0.5 w-4"></i>
+                                    <p class="text-[11px] text-royal-ivory/95 leading-snug" id="scene4Venue">
+                                        <strong>Venue / स्थान:</strong> Family Residence (निज निवास)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SCENE 5 (6/7): EVENT 4 — शुभविवाह (02 Dec 2026 | नवमी | Barat 6:00 PM) -->
+                        <div class="reel-scene absolute inset-0 flex flex-col items-center justify-center text-center p-5 bg-gradient-to-b from-red-900/50 via-royal-maroon/40 to-transparent" data-scene="5">
+                            <div class="w-11 h-11 rounded-2xl bg-royal-gold text-royal-maroon flex items-center justify-center text-lg mb-1.5 shadow-lg animate-float">
+                                <i class="fa-solid fa-fire-flame-curved"></i>
+                            </div>
+                            <span class="px-3 py-0.5 rounded-full bg-royal-gold text-royal-maroon font-bold text-[10px] uppercase tracking-wider mb-1">
+                                कार्यक्रम 04 • Main Ceremony
+                            </span>
+                            <h3 class="font-hindi text-2xl font-bold gold-text">शुभविवाह (Shubh Vivah)</h3>
+                            <p class="font-royal text-[11px] text-royal-goldLight tracking-wider mb-2">Wedding Ceremony</p>
+
+                            <div class="w-full max-w-[270px] p-3.5 rounded-2xl bg-black/65 border-2 border-royal-gold/70 backdrop-blur-sm space-y-2 text-xs text-left">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-regular fa-calendar text-royal-gold mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-bold text-white">Wednesday, 2 December 2026</p>
+                                        <p class="font-hindi text-[11px] text-royal-goldLight">बुधवार, 02 दिसम्बर 2026</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-solid fa-moon text-amber-300 mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-hindi text-amber-200 font-semibold" id="scene5Tithi">Tithi / तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – नवमी</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-solid fa-horse text-royal-gold mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="text-amber-200 font-semibold">Barat departs at 6:00 PM from the family residence</p>
+                                        <p class="font-hindi text-[11px] text-white/85">बारात प्रस्थान: सायं 06:00 बजे निज निवास से</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-solid fa-location-dot text-royal-gold mt-0.5 w-4"></i>
+                                    <p class="text-[11px] text-white leading-snug" id="scene5Venue">
+                                        <strong>Venue / स्थान:</strong> Venkatesh Vatika, Muktiyarganj, Satna
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SCENE 6 (7/7): EVENT 5 — वधू प्रवेश (03 Dec 2026 | दशमी | Village: Devra, Satna) -->
+                        <div class="reel-scene absolute inset-0 flex flex-col items-center justify-center text-center p-5 bg-gradient-to-b from-rose-900/45 via-transparent to-transparent" data-scene="6">
+                            <div class="w-11 h-11 rounded-2xl bg-rose-500/25 border border-rose-300 flex items-center justify-center text-rose-200 text-lg mb-1.5 animate-float">
+                                <i class="fa-solid fa-house-chimney-heart"></i>
+                            </div>
+                            <span class="px-3 py-0.5 rounded-full bg-rose-500/25 border border-rose-300/50 text-[10px] uppercase tracking-wider text-rose-200 mb-1">
+                                कार्यक्रम 05 • Event 05
+                            </span>
+                            <h3 class="font-hindi text-2xl font-bold text-rose-200">वधू प्रवेश</h3>
+                            <p class="font-royal text-xs text-royal-goldLight tracking-wider mb-2.5">Vadhu Pravesh</p>
+
+                            <div class="w-full max-w-[270px] p-3.5 rounded-2xl bg-black/60 border border-rose-300/45 backdrop-blur-sm space-y-2 text-xs text-left">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-regular fa-calendar text-rose-300 mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-semibold text-white">Thursday, 3 December 2026</p>
+                                        <p class="font-hindi text-[11px] text-rose-200">गुरुवार, 03 दिसम्बर 2026</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-solid fa-moon text-amber-300 mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-hindi text-amber-200 font-semibold" id="scene6Tithi">Tithi / तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – दशमी</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2 pt-1.5 border-t border-white/10">
+                                    <i class="fa-solid fa-location-dot text-rose-300 mt-0.5 w-4"></i>
+                                    <div>
+                                        <p class="font-semibold text-white">Venue / स्थान: Family residence, Village: Devra, Satna</p>
+                                        <p class="font-hindi text-[11px] text-rose-200">निज निवास, ग्राम – देवरा, सतना</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#events-itinerary" class="mt-3 px-5 py-2 rounded-full gold-btn text-xs uppercase tracking-wider shadow-lg">
+                                View All Events &amp; Venues
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Bottom Reel Playback Controls Bar -->
+                    <div class="absolute bottom-0 inset-x-0 z-30 p-3 bg-gradient-to-t from-black/90 via-black/60 to-transparent flex items-center justify-between">
+                        <button onclick="prevScene()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-royal-gold hover:text-royal-maroon text-white flex items-center justify-center transition">
+                            <i class="fa-solid fa-chevron-left text-xs"></i>
+                        </button>
+
+                        <div class="flex items-center gap-2">
+                            <button onclick="togglePlayPause()" id="playPauseBtn" class="px-4 py-1.5 rounded-full bg-royal-gold text-royal-maroon font-bold text-xs flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-pause" id="playPauseIcon"></i>
+                                <span id="playPauseText">Playing</span>
+                            </button>
+                        </div>
+
+                        <button onclick="nextScene()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-royal-gold hover:text-royal-maroon text-white flex items-center justify-center transition">
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Scene Selector Pills Below Phone -->
+                <div class="flex flex-wrap items-center justify-center gap-1.5 mt-4 max-w-md">
+                    <button onclick="jumpToScene(0)" class="scene-dot-btn px-2.5 py-1 rounded-full text-[11px] bg-royal-gold text-royal-maroon font-bold transition">1. श्री गणेश</button>
+                    <button onclick="jumpToScene(1)" class="scene-dot-btn px-2.5 py-1 rounded-full text-[11px] bg-white/10 text-royal-ivory hover:bg-white/20 transition">2. Couple</button>
+                    <button onclick="jumpToScene(2)" class="scene-dot-btn px-2.5 py-1 rounded-full text-[11px] bg-white/10 text-royal-ivory hover:bg-white/20 transition">3. तिलकोत्सव (26 Nov)</button>
+                    <button onclick="jumpToScene(3)" class="scene-dot-btn px-2.5 py-1 rounded-full text-[11px] bg-white/10 text-royal-ivory hover:bg-white/20 transition">4. मण्डप (30 Nov • 04:00 PM)</button>
+                    <button onclick="jumpToScene(4)" class="scene-dot-btn px-2.5 py-1 rounded-full text-[11px] bg-white/10 text-royal-ivory hover:bg-white/20 transition">5. हल्दी/मेहंदी/मंत्रीपूजा (1 Dec)</button>
+                    <button onclick="jumpToScene(5)" class="scene-dot-btn px-2.5 py-1 rounded-full text-[11px] bg-white/10 text-royal-ivory hover:bg-white/20 transition">6. शुभविवाह (2 Dec)</button>
+                    <button onclick="jumpToScene(6)" class="scene-dot-btn px-2.5 py-1 rounded-full text-[11px] bg-white/10 text-royal-ivory hover:bg-white/20 transition">7. वधू प्रवेश (3 Dec)</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= ALL 5 OFFICIAL WEDDING EVENTS & TITHI CARDS ================= -->
+    <section id="events-itinerary" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 border-t border-royal-gold/25">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+            <p class="font-hindi text-lg text-royal-goldLight">॥ मांगलिक कार्यक्रम एवं शुभ तिथि विवरण ॥</p>
+            <h2 class="font-royal text-3xl sm:text-5xl font-bold gold-text">Wedding Events, Dates &amp; Tithis</h2>
+            <p class="text-xs sm:text-sm text-royal-ivory/75">
+                Compiled directly from the official wedding invitation with all dates, Tithis, exact ceremony timings, and Satna venues.
+            </p>
+            <div class="mt-5 flex flex-col items-center gap-2">
+                <button type="button" onclick="downloadAllWeddingEventsICS()" class="gold-btn rounded-full px-6 py-3 text-sm sm:text-base inline-flex items-center justify-center gap-2 w-full sm:w-auto">
+                    <i class="fa-regular fa-calendar-plus"></i>
+                    <span>Add All Wedding Events to Calendar</span>
+                </button>
+                <p class="text-[11px] sm:text-xs text-royal-ivory/65 max-w-xl">Save all five ceremonies in one calendar file. Your phone or computer will open the file in a compatible calendar app; confirm the import when prompted.</p>
+            </div>
+        </div>
+
+        <!-- 5 Event Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- EVENT 1: Tilakotsav & Preetibhoj (26 Nov 2026) -->
+            <div class="ornate-card rounded-3xl p-6 sm:p-7 flex flex-col justify-between hover:-translate-y-1.5 transition duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-royal-gold/20 border border-royal-gold/45 text-royal-goldLight text-xs font-semibold">
+                            Event 01 • 26 Nov 2026
+                        </span>
+                        <div class="w-10 h-10 rounded-2xl bg-royal-gold/20 border border-royal-gold flex items-center justify-center text-royal-gold">
+                            <i class="fa-solid fa-bowl-food"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="font-hindi text-2xl font-bold text-royal-goldLight">तिलकोत्सव एवं प्रीतिभोज</h3>
+                    <p class="font-royal text-sm text-royal-gold mb-4">Tilakotsav &amp; Preetibhoj</p>
+
+                    <div class="p-3 rounded-2xl bg-black/40 border border-royal-gold/35 mb-4">
+                        <p class="text-[10px] uppercase tracking-wider text-royal-gold">Tithi / तिथि (Satna Panchang)</p>
+                        <p class="font-hindi text-base font-bold text-amber-200 mt-0.5" id="card1Tithi">अगहन (मार्गशीर्ष) कृष्ण पक्ष – तृतीया (सायंकाल)</p>
+                    </div>
+
+                    <div class="space-y-2.5 text-xs sm:text-sm text-royal-ivory/90 border-t border-royal-gold/20 pt-3.5">
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-calendar text-royal-gold w-4 mt-1"></i>
+                            <span><strong>Thursday, 26 November 2026</strong><br><span class="font-hindi text-xs text-royal-ivory/75">गुरुवार, 26 नवम्बर 2026</span></span>
+                        </p>
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-clock text-royal-gold w-4 mt-1"></i>
+                            <span id="card1Time"><strong>Time / समय:</strong> Guests invited from 7:00 PM onwards</span>
+                        </p>
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-royal-gold w-4 mt-1"></i>
+                            <span id="card1Venue"><strong>Venue / स्थान:</strong> Sangam Marriage Garden, Rewa–Satna Road, Bahelia Bhat, Satna</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2.5 mt-6 pt-4 border-t border-white/10">
+                    <button onclick="previewSceneFromCard(2)" class="py-2.5 px-3 rounded-xl bg-royal-gold/20 hover:bg-royal-gold hover:text-royal-maroon text-royal-goldLight border border-royal-gold/40 text-xs font-semibold transition flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-play"></i> View in Reel
+                    </button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Sangam+Marriage+Garden+Rewa+Satna+Road+Bahelia+Bhat+Satna" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-medium transition flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-map-location-dot"></i> Google Map
+                    </a>
+                </div>
+            </div>
+
+            <!-- EVENT 2: Maati-Mangar & Mandap (30 Nov 2026 | Time: 04:00 PM) -->
+            <div class="rounded-3xl bg-gradient-to-b from-[#083828]/95 to-[#1E0509]/95 border border-emerald-400/45 p-6 sm:p-7 flex flex-col justify-between shadow-xl hover:-translate-y-1.5 transition duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-300/40 text-emerald-200 text-xs font-semibold">
+                            Event 02 • 30 Nov 2026
+                        </span>
+                        <div class="w-10 h-10 rounded-2xl bg-emerald-500/20 border border-emerald-300 flex items-center justify-center text-emerald-300">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="font-hindi text-2xl font-bold text-emerald-200">माटीमागर एवं मण्डप</h3>
+                    <p class="font-royal text-sm text-emerald-100 mb-4">Maati-Mangar &amp; Mandap</p>
+
+                    <div class="p-3 rounded-2xl bg-black/40 border border-emerald-400/35 mb-4">
+                        <p class="text-[10px] uppercase tracking-wider text-emerald-300">Tithi / तिथि (Satna Panchang)</p>
+                        <p class="font-hindi text-base font-bold text-amber-200 mt-0.5" id="card2Tithi">अगहन (मार्गशीर्ष) कृष्ण पक्ष – सप्तमी</p>
+                    </div>
+
+                    <div class="space-y-2.5 text-xs sm:text-sm text-royal-ivory/90 border-t border-emerald-400/20 pt-3.5">
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-calendar text-emerald-300 w-4 mt-1"></i>
+                            <span><strong>Monday, 30 November 2026</strong><br><span class="font-hindi text-xs text-royal-ivory/75">सोमवार, 30 नवम्बर 2026</span></span>
+                        </p>
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-clock text-emerald-300 w-4 mt-1"></i>
+                            <span id="card2Time">
+                                <strong>Time / समय: <span class="text-emerald-200 text-base">04:00 PM</span></strong><br>
+                                <span class="font-hindi text-xs text-emerald-100/90">सायं 04:00 बजे (माटीमागर एवं मण्डप)</span>
+                            </span>
+                        </p>
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-house-chimney text-emerald-300 w-4 mt-1"></i>
+                            <span id="card2Venue"><strong>Venue / स्थान:</strong> Family Residence (निज निवास)</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2.5 mt-6 pt-4 border-t border-white/10">
+                    <button onclick="previewSceneFromCard(3)" class="py-2.5 px-3 rounded-xl bg-emerald-500/20 hover:bg-emerald-400 hover:text-royal-maroon text-emerald-200 border border-emerald-300/40 text-xs font-semibold transition flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-play"></i> View in Reel
+                    </button>
+                    <button onclick="downloadICS('Maati-Mangar & Mandap - Ashutosh & Akanksha', '20261130T160000', '20261130T200000', 'Family Residence, Satna', 'Tithi: अगहन (मार्गशीर्ष) कृष्ण पक्ष – सप्तमी | Time: 04:00 PM')" class="py-2.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-medium transition flex items-center justify-center gap-1.5">
+                        <i class="fa-regular fa-calendar-plus"></i> Add Calendar
+                    </button>
+                </div>
+            </div>
+
+            <!-- EVENT 3: Mantri Pooja (04:00 PM), Haldi (10:00 AM) & Mehndi (12:00 PM) (01 Dec 2026) -->
+            <div class="rounded-3xl bg-gradient-to-b from-[#463006]/95 to-[#22070C]/95 border border-amber-400/50 p-6 sm:p-7 flex flex-col justify-between shadow-xl hover:-translate-y-1.5 transition duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-200 text-xs font-semibold">
+                            Event 03 • 01 Dec 2026
+                        </span>
+                        <div class="w-10 h-10 rounded-2xl bg-amber-400/20 border border-amber-300 flex items-center justify-center text-amber-300">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="font-hindi text-2xl font-bold text-amber-300">मंत्रीपूजा, हल्दी एवं मेहंदी</h3>
+                    <p class="font-royal text-sm text-amber-100 mb-4">Mantri Pooja, Haldi &amp; Mehndi</p>
+
+                    <div class="p-3 rounded-2xl bg-black/40 border border-amber-400/35 mb-4">
+                        <p class="text-[10px] uppercase tracking-wider text-amber-300">Tithi / तिथि (Satna Panchang)</p>
+                        <p class="font-hindi text-base font-bold text-amber-200 mt-0.5" id="card3Tithi">अगहन (मार्गशीर्ष) कृष्ण पक्ष – अष्टमी</p>
+                    </div>
+
+                    <div class="space-y-2.5 text-xs sm:text-sm text-royal-ivory/90 border-t border-amber-300/20 pt-3.5">
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-calendar text-amber-300 w-4 mt-1"></i>
+                            <span><strong>Tuesday, 1 December 2026</strong><br><span class="font-hindi text-xs text-royal-ivory/75">मंगलवार, 01 दिसम्बर 2026</span></span>
+                        </p>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-clock text-amber-300 w-4 mt-1"></i>
+                            <div class="flex-1 space-y-1.5" id="card3Time">
+                                <p class="font-semibold text-white">Time / समय:</p>
+                                <div class="grid grid-cols-1 gap-1.5 text-xs">
+                                    <div class="px-3 py-1.5 rounded-xl bg-amber-400/20 border border-amber-300/40 text-amber-200 flex items-center justify-between">
+                                        <span>🌼 <strong>Haldi (हल्दी):</strong></span>
+                                        <strong class="text-white">10:00 AM</strong>
+                                    </div>
+                                    <div class="px-3 py-1.5 rounded-xl bg-emerald-400/20 border border-emerald-300/40 text-emerald-200 flex items-center justify-between">
+                                        <span>🌿 <strong>Mehndi (मेहंदी):</strong></span>
+                                        <strong class="text-white">12:00 PM</strong>
+                                    </div>
+                                    <div class="px-3 py-1.5 rounded-xl bg-royal-gold/25 border border-royal-gold/50 text-royal-goldLight flex items-center justify-between">
+                                        <span>🪔 <strong>Mantri Pooja (मंत्रीपूजा):</strong></span>
+                                        <strong class="text-white">04:00 PM</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-house-chimney text-amber-300 w-4 mt-1"></i>
+                            <span id="card3Venue"><strong>Venue / स्थान:</strong> Family Residence (निज निवास)</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2.5 mt-6 pt-4 border-t border-white/10">
+                    <button onclick="previewSceneFromCard(4)" class="py-2.5 px-3 rounded-xl bg-amber-400/20 hover:bg-amber-400 hover:text-royal-maroon text-amber-200 border border-amber-300/40 text-xs font-semibold transition flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-play"></i> View in Reel
+                    </button>
+                    <button onclick="downloadICS('Mantri Pooja, Haldi & Mehndi - Ashutosh & Akanksha', '20261201T100000', '20261201T190000', 'Family Residence, Satna', 'Tithi: अगहन (मार्गशीर्ष) कृष्ण पक्ष – अष्टमी | Haldi: 10:00 AM | Mehndi: 12:00 PM | Mantri Pooja: 04:00 PM')" class="py-2.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-medium transition flex items-center justify-center gap-1.5">
+                        <i class="fa-regular fa-calendar-plus"></i> Add Calendar
+                    </button>
+                </div>
+            </div>
+
+            <!-- EVENT 4: Shubh Vivah / Wedding Ceremony (02 Dec 2026 | Navami) -->
+            <div class="rounded-3xl bg-gradient-to-b from-[#5A0E1B] to-[#260409] border-2 border-royal-gold p-6 sm:p-7 flex flex-col justify-between shadow-2xl hover:-translate-y-1.5 transition duration-300 md:col-span-2 lg:col-span-2">
+                <div>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                        <span class="px-3.5 py-1 rounded-full bg-royal-gold text-royal-maroon text-xs font-bold uppercase tracking-wider">
+                            Event 04 • Main Wedding Ceremony • Wednesday, 2 December 2026
+                        </span>
+                        <div class="w-10 h-10 rounded-2xl bg-royal-gold text-royal-maroon flex items-center justify-center text-base shadow">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                        <div class="md:col-span-7 space-y-3">
+                            <h3 class="font-hindi text-3xl font-bold gold-text">शुभविवाह</h3>
+                            <p class="font-royal text-base text-royal-goldLight">Shubh Vivah (Wedding Ceremony)</p>
+
+                            <div class="p-3.5 rounded-2xl bg-black/45 border border-royal-gold/45">
+                                <p class="text-[10px] uppercase tracking-wider text-royal-gold">Tithi / तिथि (Satna Panchang)</p>
+                                <p class="font-hindi text-lg font-bold text-amber-200 mt-0.5" id="card4Tithi">अगहन (मार्गशीर्ष) कृष्ण पक्ष – नवमी</p>
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-5 space-y-2.5 text-xs sm:text-sm text-royal-ivory/95 bg-black/35 p-4 rounded-2xl border border-royal-gold/30">
+                            <p class="flex items-start gap-2.5">
+                                <i class="fa-regular fa-calendar text-royal-gold w-4 mt-1"></i>
+                                <span><strong>Wednesday, 2 December 2026</strong><br><span class="font-hindi text-xs text-royal-goldLight">बुधवार, 02 दिसम्बर 2026</span></span>
+                            </p>
+                            <p class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-horse text-royal-gold w-4 mt-1"></i>
+                                <span><strong>Time / समय:</strong> Barat departs at 6:00 PM from the family residence</span>
+                            </p>
+                            <p class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-location-dot text-royal-gold w-4 mt-1"></i>
+                                <span id="card4Venue"><strong>Venue / स्थान:</strong> Venkatesh Vatika, Muktiyarganj, Satna</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-6 pt-4 border-t border-white/15">
+                    <button onclick="previewSceneFromCard(5)" class="py-2.5 px-3 rounded-xl gold-btn text-xs font-bold flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-play"></i> Watch Wedding Scene
+                    </button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Venkatesh+Vatika+Muktiyarganj+Satna" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-medium transition flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-location-arrow"></i> Navigate to Venkatesh Vatika
+                    </a>
+                    <button onclick="downloadICS('Shubh Vivah - Ashutosh Weds Akanksha', '20261202T180000', '20261203T020000', 'Venkatesh Vatika, Muktiyarganj, Satna', 'Tithi: अगहन (मार्गशीर्ष) कृष्ण पक्ष – नवमी | Barat departs at 6:00 PM from the family residence')" class="py-2.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-medium transition flex items-center justify-center gap-1.5">
+                        <i class="fa-regular fa-calendar-plus"></i> Save Wedding Date
+                    </button>
+                </div>
+            </div>
+
+            <!-- EVENT 5: Vadhu Pravesh (03 Dec 2026 | Dashami) -->
+            <div class="rounded-3xl bg-gradient-to-b from-[#471323]/95 to-[#20050B]/95 border border-rose-300/45 p-6 sm:p-7 flex flex-col justify-between shadow-xl hover:-translate-y-1.5 transition duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-rose-500/20 border border-rose-300/40 text-rose-200 text-xs font-semibold">
+                            Event 05 • 03 Dec 2026
+                        </span>
+                        <div class="w-10 h-10 rounded-2xl bg-rose-500/20 border border-rose-300 flex items-center justify-center text-rose-200">
+                            <i class="fa-solid fa-house-chimney-heart"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="font-hindi text-2xl font-bold text-rose-200">वधू प्रवेश</h3>
+                    <p class="font-royal text-sm text-rose-100 mb-4">Vadhu Pravesh</p>
+
+                    <div class="p-3 rounded-2xl bg-black/40 border border-rose-300/35 mb-4">
+                        <p class="text-[10px] uppercase tracking-wider text-rose-300">Tithi / तिथि (Satna Panchang)</p>
+                        <p class="font-hindi text-base font-bold text-amber-200 mt-0.5" id="card5Tithi">अगहन (मार्गशीर्ष) कृष्ण पक्ष – दशमी</p>
+                    </div>
+
+                    <div class="space-y-2.5 text-xs sm:text-sm text-royal-ivory/90 border-t border-rose-300/20 pt-3.5">
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-calendar text-rose-300 w-4 mt-1"></i>
+                            <span><strong>Thursday, 3 December 2026</strong><br><span class="font-hindi text-xs text-royal-ivory/75">गुरुवार, 03 दिसम्बर 2026</span></span>
+                        </p>
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-clock text-rose-300 w-4 mt-1"></i>
+                            <span><strong>Time / समय:</strong> Auspicious Muhurat (शुभ मुहूर्त अनुसार)</span>
+                        </p>
+                        <p class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-rose-300 w-4 mt-1"></i>
+                            <span><strong>Venue / स्थान:</strong> Family residence, Village: Devra, Satna</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2.5 mt-6 pt-4 border-t border-white/10">
+                    <button onclick="previewSceneFromCard(6)" class="py-2.5 px-3 rounded-xl bg-rose-500/20 hover:bg-rose-400 hover:text-royal-maroon text-rose-200 border border-rose-300/40 text-xs font-semibold transition flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-play"></i> View in Reel
+                    </button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Devra+Satna+Madhya+Pradesh" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-medium transition flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-map-pin"></i> Village Devra Map
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= COMPLETE BILINGUAL PANCHANG / TITHI SCHEDULE TABLE ================= -->
+    <section id="panchang-table" class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-12">
+        <div class="ornate-card rounded-3xl p-6 sm:p-10">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-royal-gold/30">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-royal-gold">ASHUTOSH WEDS AKANKSHA • Official Schedule</span>
+                    <h3 class="font-royal text-2xl sm:text-3xl font-bold gold-text mt-1">
+                        Wedding Events, Dates, Tithis &amp; Timings
+                    </h3>
+                </div>
+                <button onclick="window.print()" class="self-start sm:self-auto px-4 py-2 rounded-xl border border-royal-gold/50 text-royal-goldLight hover:bg-royal-gold hover:text-royal-maroon text-xs font-semibold transition flex items-center gap-2">
+                    <i class="fa-solid fa-print"></i> Print / Save Schedule
+                </button>
+            </div>
+
+            <div class="overflow-x-auto mt-6">
+                <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                    <thead>
+                        <tr class="border-b-2 border-royal-gold/45 text-royal-gold uppercase tracking-wider text-xs">
+                            <th class="py-3.5 px-4 w-1/3">Event / कार्यक्रम</th>
+                            <th class="py-3.5 px-4">Date, Tithi &amp; Details / दिनांक, तिथि एवं विवरण</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/15">
+                        <!-- Row 1: Tilakotsav & Preetibhoj -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="py-4 px-4 align-top">
+                                <p class="font-bold text-white text-base">Tilakotsav &amp; Preetibhoj</p>
+                                <p class="font-hindi text-lg text-royal-goldLight mt-0.5">तिलकोत्सव एवं प्रीतिभोज</p>
+                            </td>
+                            <td class="py-4 px-4 space-y-1">
+                                <p class="font-bold text-white">Thursday, 26 November 2026 <span class="font-hindi text-royal-goldLight ml-1">(गुरुवार, 26 नवम्बर 2026)</span></p>
+                                <p class="font-hindi text-amber-200 font-semibold" id="table1Tithi">Tithi / तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – तृतीया (सायंकाल; द्वितीया दोपहर 1:15 बजे तक)</p>
+                                <p class="text-white"><strong>Time / समय:</strong> Guests invited from 7:00 PM onwards</p>
+                                <p class="text-royal-ivory/90"><strong>Venue / स्थान:</strong> Sangam Marriage Garden, Rewa–Satna Road, Bahelia Bhat, Satna</p>
+                            </td>
+                        </tr>
+
+                        <!-- Row 2: Maati-Mangar & Mandap (Time: 04:00 PM) -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="py-4 px-4 align-top">
+                                <p class="font-bold text-white text-base">Maati-Mangar &amp; Mandap</p>
+                                <p class="font-hindi text-lg text-emerald-200 mt-0.5">माटीमागर एवं मण्डप</p>
+                            </td>
+                            <td class="py-4 px-4 space-y-1">
+                                <p class="font-bold text-white">Monday, 30 November 2026 <span class="font-hindi text-emerald-200 ml-1">(सोमवार, 30 नवम्बर 2026)</span></p>
+                                <p class="font-hindi text-amber-200 font-semibold" id="table2Tithi">Tithi / तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – सप्तमी (Satna Panchang)</p>
+                                <p class="text-white" id="table2Time"><strong>Time / समय:</strong> <span class="px-2 py-0.5 rounded bg-emerald-500/20 border border-emerald-400/40 text-emerald-200 font-bold">04:00 PM</span></p>
+                                <p class="text-royal-ivory/90"><strong>Venue / स्थान:</strong> Family Residence (निज निवास)</p>
+                            </td>
+                        </tr>
+
+                        <!-- Row 3: Mantri Pooja (04:00 PM), Haldi (10:00 AM) & Mehndi (12:00 PM) -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="py-4 px-4 align-top">
+                                <p class="font-bold text-white text-base">Mantri Pooja, Haldi &amp; Mehndi</p>
+                                <p class="font-hindi text-lg text-amber-300 mt-0.5">मंत्रीपूजा, हल्दी एवं मेहंदी</p>
+                            </td>
+                            <td class="py-4 px-4 space-y-1.5">
+                                <p class="font-bold text-white">Tuesday, 1 December 2026 <span class="font-hindi text-amber-200 ml-1">(मंगलवार, 01 दिसम्बर 2026)</span></p>
+                                <p class="font-hindi text-amber-200 font-semibold" id="table3Tithi">Tithi / तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – अष्टमी (Satna Panchang)</p>
+                                <div class="text-white" id="table3Time">
+                                    <strong>Time / समय:</strong>
+                                    <div class="flex flex-wrap gap-2 mt-1">
+                                        <span class="px-2.5 py-1 rounded-lg bg-amber-400/20 border border-amber-300/45 text-amber-200 font-bold">🌼 Haldi (हल्दी): 10:00 AM</span>
+                                        <span class="px-2.5 py-1 rounded-lg bg-emerald-400/20 border border-emerald-300/45 text-emerald-200 font-bold">🌿 Mehndi (मेहंदी): 12:00 PM</span>
+                                        <span class="px-2.5 py-1 rounded-lg bg-royal-gold/25 border border-royal-gold/50 text-royal-goldLight font-bold">🪔 Mantri Pooja (मंत्रीपूजा): 04:00 PM</span>
+                                    </div>
+                                </div>
+                                <p class="text-royal-ivory/90"><strong>Venue / स्थान:</strong> Family Residence (निज निवास)</p>
+                            </td>
+                        </tr>
+
+                        <!-- Row 4: Shubh Vivah (Wedding Ceremony) -->
+                        <tr class="bg-royal-gold/10 hover:bg-royal-gold/15 transition">
+                            <td class="py-4 px-4 align-top">
+                                <p class="font-bold text-royal-gold text-base">Shubh Vivah (Wedding Ceremony)</p>
+                                <p class="font-hindi text-xl text-royal-goldLight mt-0.5">शुभविवाह</p>
+                            </td>
+                            <td class="py-4 px-4 space-y-1">
+                                <p class="font-bold text-white">Wednesday, 2 December 2026 <span class="font-hindi text-royal-goldLight ml-1">(बुधवार, 02 दिसम्बर 2026)</span></p>
+                                <p class="font-hindi text-amber-200 font-semibold" id="table4Tithi">Tithi / तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – नवमी (Satna Panchang)</p>
+                                <p class="text-amber-200 font-semibold"><strong>Time / समय:</strong> Wedding time as per auspicious Muhurat; <strong>Barat departs at 6:00 PM from the family residence</strong></p>
+                                <p class="text-white"><strong>Venue / स्थान:</strong> <strong>Venkatesh Vatika, Muktiyarganj, Satna</strong></p>
+                            </td>
+                        </tr>
+
+                        <!-- Row 5: Vadhu Pravesh -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="py-4 px-4 align-top">
+                                <p class="font-bold text-white text-base">Vadhu Pravesh</p>
+                                <p class="font-hindi text-lg text-rose-200 mt-0.5">वधू प्रवेश</p>
+                            </td>
+                            <td class="py-4 px-4 space-y-1">
+                                <p class="font-bold text-white">Thursday, 3 December 2026 <span class="font-hindi text-rose-200 ml-1">(गुरुवार, 03 दिसम्बर 2026)</span></p>
+                                <p class="font-hindi text-amber-200 font-semibold" id="table5Tithi">Tithi / तिथि: अगहन (मार्गशीर्ष) कृष्ण पक्ष – दशमी (Satna Panchang)</p>
+                                <p class="text-white"><strong>Time / समय:</strong> Auspicious Muhurat (शुभ मुहूर्त अनुसार)</p>
+                                <p class="text-royal-ivory/90"><strong>Venue / स्थान:</strong> <strong>Family residence, Village: Devra, Satna</strong></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Important Note Box from Uploaded Document -->
+            <div class="mt-6 p-4 rounded-2xl bg-black/40 border border-royal-gold/30 space-y-2 text-xs text-royal-ivory/85">
+                <p>
+                    <i class="fa-solid fa-scroll text-royal-gold mr-1.5"></i>
+                    <strong>Barat Departure Note:</strong> The invitation states that the Barat will depart from the family residence on <strong>Wednesday, 2 December 2026, at 6:00 PM</strong> for Satna.
+                </p>
+                <p class="text-royal-ivory/70">
+                    <i class="fa-solid fa-circle-info text-royal-gold mr-1.5"></i>
+                    <strong>Note about Tithi:</strong> The Hindu Panchang for Satna places these ceremonies in अगहन (मार्गशीर्ष) कृष्ण पक्ष. On 26 November, द्वितीया ends at about 1:15 PM and तृतीया follows; because Tilakotsav begins at 7:00 PM, the event-time tithi is तृतीया. Tithi end times can vary slightly by Panchang calculation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-royal-gold/30 bg-[#1B0307] py-10 text-center text-xs text-royal-ivory/70">
+        <div class="max-w-4xl mx-auto px-4 space-y-2">
+            <p class="font-hindi text-base text-royal-goldLight">॥ स्नेहाकांक्षी एवं दर्शनाभिलाषी : समस्त परिवार एवं मित्रगण (ग्राम – देवरा, सतना) ॥</p>
+            <p class="font-royal text-lg font-bold gold-text">Ashutosh Weds Akanksha • #AshuKiAkanksha</p>
+            <p>26 November – 03 December 2026 • Satna, Madhya Pradesh</p>
+        </div>
+    </footer>
+<!-- ================= LIVE CUSTOMIZER DRAWER ================= -->
+    <div id="customizerDrawer" class="fixed inset-y-0 right-0 z-50 w-full max-w-md bg-[#240409] border-l-2 border-royal-gold shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+        <div class="p-4 border-b border-royal-gold/30 flex items-center justify-between bg-black/40">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-sliders text-royal-gold"></i>
+                <h3 class="font-royal text-base font-bold text-white">Live Invitation Customizer</h3>
+            </div>
+            <button onclick="toggleCustomizer()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-royal-gold hover:text-royal-maroon text-white flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="p-5 overflow-y-auto flex-1 space-y-4 text-sm">
+            <div>
+                <label class="block text-xs uppercase tracking-wider text-royal-goldLight mb-2">Royal Color Palette</label>
+                <div class="grid grid-cols-3 gap-2">
+                    <button onclick="applyTheme('crimson')" class="p-2.5 rounded-xl border border-royal-gold bg-[#4A0E17] text-xs font-medium text-white flex flex-col items-center gap-1 hover:scale-105 transition">
+                        <span class="w-5 h-5 rounded-full bg-gradient-to-r from-[#4A0E17] to-[#D4AF37] border border-white"></span>
+                        <span>Maroon &amp; Gold</span>
+                    </button>
+                    <button onclick="applyTheme('emerald')" class="p-2.5 rounded-xl border border-royal-gold/40 bg-[#063626] text-xs font-medium text-white flex flex-col items-center gap-1 hover:scale-105 transition">
+                        <span class="w-5 h-5 rounded-full bg-gradient-to-r from-[#0B4F3A] to-[#D4AF37] border border-white"></span>
+                        <span>Emerald Palace</span>
+                    </button>
+                    <button onclick="applyTheme('ivoryrose')" class="p-2.5 rounded-xl border border-royal-gold/40 bg-[#4A1C24] text-xs font-medium text-white flex flex-col items-center gap-1 hover:scale-105 transition">
+                        <span class="w-5 h-5 rounded-full bg-gradient-to-r from-[#FDFBF7] via-[#E8B4B8] to-[#B76E79] border border-white"></span>
+                        <span>Ivory &amp; Rose</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                    <label class="block text-xs text-royal-goldLight mb-1">Groom Name</label>
+                    <input type="text" id="custGroom" value="Ashutosh" oninput="updateLiveTemplate()" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-royal-gold/40 text-white text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs text-royal-goldLight mb-1">Bride Name</label>
+                    <input type="text" id="custBride" value="Akanksha" oninput="updateLiveTemplate()" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-royal-gold/40 text-white text-sm">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                    <label class="block text-xs text-royal-goldLight mb-1">Monogram</label>
+                    <input type="text" id="custMonogram" value="A & A" oninput="updateLiveTemplate()" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-royal-gold/40 text-white text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs text-royal-goldLight mb-1">Wedding Hashtag</label>
+                    <input type="text" id="custHashtag" value="#AshuKiAkanksha" oninput="updateLiveTemplate()" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-royal-gold/40 text-white text-sm">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-xs text-royal-goldLight mb-1">Lunar Month &amp; Paksha Prefix (तिथि पक्ष)</label>
+                <select id="custPakshaPrefix" onchange="updatePakshaWording()" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-royal-gold/40 text-white text-sm font-hindi">
+                    <option value="अगहन (मार्गशीर्ष) कृष्ण पक्ष" selected>अगहन (मार्गशीर्ष) कृष्ण पक्ष</option>
+                    <option value="मार्गशीर्ष (अगहन) कृष्णपक्ष">मार्गशीर्ष (अगहन) कृष्णपक्ष (Nov/Dec Panchang)</option>
+                </select>
+            </div>
+
+            <!-- Live Ceremony Timings Editor -->
+            <div class="border-t border-royal-gold/25 pt-3 space-y-3">
+                <p class="text-xs uppercase tracking-wider text-royal-gold font-semibold">Ceremony Timings (30 Nov &amp; 01 Dec)</p>
+                <div class="grid grid-cols-2 gap-2.5">
+                    <div>
+                        <label class="block text-[11px] text-royal-goldLight mb-1">Maati-Mangar &amp; Mandap</label>
+                        <input type="text" id="custMandapTime" value="04:00 PM" oninput="updateCeremonyTimings()" class="w-full px-2.5 py-1.5 rounded-lg bg-black/40 border border-royal-gold/40 text-white text-xs">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] text-royal-goldLight mb-1">Haldi (01 Dec)</label>
+                        <input type="text" id="custHaldiTime" value="10:00 AM" oninput="updateCeremonyTimings()" class="w-full px-2.5 py-1.5 rounded-lg bg-black/40 border border-royal-gold/40 text-white text-xs">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] text-royal-goldLight mb-1">Mehndi (01 Dec)</label>
+                        <input type="text" id="custMehndiTime" value="12:00 PM" oninput="updateCeremonyTimings()" class="w-full px-2.5 py-1.5 rounded-lg bg-black/40 border border-royal-gold/40 text-white text-xs">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] text-royal-goldLight mb-1">Mantri Pooja (01 Dec)</label>
+                        <input type="text" id="custMantriTime" value="04:00 PM" oninput="updateCeremonyTimings()" class="w-full px-2.5 py-1.5 rounded-lg bg-black/40 border border-royal-gold/40 text-white text-xs">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 border-t border-royal-gold/30 bg-black/40 flex items-center justify-between">
+            <button onclick="resetCustomizer()" class="px-4 py-2 rounded-lg border border-white/20 text-xs text-white/80 hover:text-white">
+                Reset Defaults
+            </button>
+            <button onclick="toggleCustomizer()" class="px-5 py-2 rounded-lg gold-btn text-xs">
+                Done
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= COMPLETE JAVASCRIPT ENGINE ================= -->
+    <script>
+        const TOTAL_SCENES = 7;
+        const SCENE_DURATION_MS = 4800;
+        const SCENE_TITLES = [
+            "Scene 1/7 • श्री गणेश वंदना",
+            "Scene 2/7 • Ashutosh Weds Akanksha",
+            "Scene 3/7 • तिलकोत्सव (26 Nov • 7:00 PM)",
+            "Scene 4/7 • माटीमागर एवं मण्डप (30 Nov • 04:00 PM)",
+            "Scene 5/7 • हल्दी 10 AM, मेहंदी 12 PM, मंत्रीपूजा 4 PM",
+            "Scene 6/7 • शुभविवाह एवं बारात (02 Dec • 6:00 PM)",
+            "Scene 7/7 • वधू प्रवेश (03 Dec • ग्राम देवरा)"
+        ];
+
+        let currentScene = 0;
+        let isPlaying = true;
+        let progressInterval = null;
+        let currentProgress = 0;
+
+        // Wedding bhajan playback. Audio begins only after a visitor taps the music button.
+        let audioEnabled = false;
+        const weddingMusic = document.getElementById('weddingMusic');
+        function playAuspiciousChime(seedIndex = 0) { /* The supplied bhajan replaces synthetic chimes. */ }
+        async function toggleAudio() {
+            const icon = document.getElementById('audioIcon');
+            const label = document.querySelector('#audioToggleBtn span');
+            if (!weddingMusic) return;
+            if (!audioEnabled) {
+                try {
+                    await weddingMusic.play();
+                    audioEnabled = true;
+                    icon.className = 'fa-solid fa-volume-high text-xs';
+                    if (label) label.textContent = 'Bhajan On';
+                    document.getElementById('audioToggleBtn').title = 'Pause wedding bhajan';
+                } catch (error) {
+                    audioEnabled = false;
+                    if (label) label.textContent = 'Tap for Music';
+                }
+            } else {
+                weddingMusic.pause();
+                audioEnabled = false;
+                icon.className = 'fa-solid fa-volume-xmark text-xs';
+                if (label) label.textContent = 'Bhajan';
+                document.getElementById('audioToggleBtn').title = 'Play wedding bhajan';
+            }
+        }
+
+        function openPalaceGates() {
+            const gates = document.getElementById('palaceGatesContainer');
+            if (gates) {
+                setTimeout(() => {
+                    gates.classList.add('gates-open');
+                }, 350);
+            }
+        }
+
+        function renderScene(index) {
+            currentScene = (index + TOTAL_SCENES) % TOTAL_SCENES;
+            currentProgress = 0;
+
+            document.querySelectorAll('.reel-scene').forEach((el, idx) => {
+                if (idx === currentScene) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            });
+
+            document.getElementById('reelSceneIndicator').textContent = SCENE_TITLES[currentScene];
+
+            document.querySelectorAll('.scene-dot-btn').forEach((btn, idx) => {
+                if (idx === currentScene) {
+                    btn.className = 'scene-dot-btn px-2.5 py-1 rounded-full text-[11px] bg-royal-gold text-royal-maroon font-bold transition';
+                } else {
+                    btn.className = 'scene-dot-btn px-2.5 py-1 rounded-full text-[11px] bg-white/10 text-royal-ivory hover:bg-white/20 transition';
+                }
+            });
+
+            updateProgressBars();
+            playAuspiciousChime(currentScene);
+        }
+
+        function updateProgressBars() {
+            const fills = document.querySelectorAll('.story-fill');
+            fills.forEach((fill, idx) => {
+                if (idx < currentScene) {
+                    fill.style.width = '100%';
+                } else if (idx === currentScene) {
+                    fill.style.width = `${currentProgress}%`;
+                } else {
+                    fill.style.width = '0%';
+                }
+            });
+        }
+
+        function startPlayerLoop() {
+            if (progressInterval) clearInterval(progressInterval);
+            const stepMs = 50;
+            const increment = (stepMs / SCENE_DURATION_MS) * 100;
+
+            progressInterval = setInterval(() => {
+                if (!isPlaying) return;
+                currentProgress += increment;
+                if (currentProgress >= 100) {
+                    renderScene(currentScene + 1);
+                } else {
+                    updateProgressBars();
+                }
+            }, stepMs);
+        }
+
+        function togglePlayPause() {
+            isPlaying = !isPlaying;
+            const icon = document.getElementById('playPauseIcon');
+            const txt = document.getElementById('playPauseText');
+            if (isPlaying) {
+                icon.className = 'fa-solid fa-pause';
+                txt.textContent = 'Playing';
+            } else {
+                icon.className = 'fa-solid fa-play';
+                txt.textContent = 'Paused';
+            }
+        }
+
+        function nextScene() {
+            renderScene(currentScene + 1);
+        }
+
+        function prevScene() {
+            renderScene(currentScene - 1);
+        }
+
+        function jumpToScene(index) {
+            renderScene(index);
+        }
+
+        function previewSceneFromCard(index) {
+            renderScene(index);
+            document.getElementById('video-invite').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function restartReel() {
+            const gates = document.getElementById('palaceGatesContainer');
+            gates.classList.remove('gates-open');
+            setTimeout(() => {
+                renderScene(0);
+                isPlaying = true;
+                document.getElementById('playPauseIcon').className = 'fa-solid fa-pause';
+                document.getElementById('playPauseText').textContent = 'Playing';
+                gates.classList.add('gates-open');
+            }, 300);
+        }
+
+        // Countdown to Shubh Vivah (2 Dec 2026, 6:00 PM IST)
+        function startCountdown() {
+            const weddingDate = new Date('2026-12-02T18:00:00+05:30').getTime();
+            function update() {
+                const now = new Date().getTime();
+                const diff = Math.max(0, weddingDate - now);
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('cdDays').textContent = String(days).padStart(2, '0');
+                document.getElementById('cdHours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('cdMins').textContent = String(mins).padStart(2, '0');
+                document.getElementById('cdSecs').textContent = String(secs).padStart(2, '0');
+            }
+            update();
+            setInterval(update, 1000);
+        }
+        // Live Customizer Controls
+        function toggleCustomizer() {
+            const drawer = document.getElementById('customizerDrawer');
+            drawer.classList.toggle('translate-x-full');
+        }
+
+        function updateLiveTemplate() {
+            const groom = document.getElementById('custGroom').value || 'Ashutosh';
+            const bride = document.getElementById('custBride').value || 'Akanksha';
+            const monogram = document.getElementById('custMonogram').value || 'A & A';
+            const hashtag = document.getElementById('custHashtag').value || '#AshuKiAkanksha';
+
+            document.getElementById('heroGroom').textContent = groom;
+            document.getElementById('heroBride').textContent = bride;
+            document.getElementById('scene1Groom').textContent = groom;
+            document.getElementById('scene1Bride').textContent = bride;
+            document.getElementById('navCoupleTitle').textContent = `${groom} & ${bride}`;
+            document.getElementById('reelHeaderTitle').textContent = `${groom} & ${bride}`;
+            document.getElementById('navMonogram').textContent = monogram;
+            document.getElementById('scene1Monogram').textContent = monogram;
+            document.getElementById('heroHashtag').textContent = hashtag;
+            document.getElementById('scene1Hashtag').textContent = hashtag;
+        }
+
+        function updatePakshaWording() {
+            const prefix = document.getElementById('custPakshaPrefix').value;
+            const tithis = ['तृतीया (सायंकाल)', 'सप्तमी', 'अष्टमी', 'नवमी', 'दशमी'];
+
+            tithis.forEach((t, i) => {
+                const num = i + 1;
+                const sceneId = `scene${i + 2}Tithi`;
+                const cardId = `card${num}Tithi`;
+                const tableId = `table${num}Tithi`;
+
+                if (document.getElementById(sceneId)) {
+                    document.getElementById(sceneId).textContent = `Tithi / तिथि: ${prefix} – ${t}`;
+                }
+                if (document.getElementById(cardId)) {
+                    document.getElementById(cardId).textContent = `${prefix} – ${t}`;
+                }
+                if (document.getElementById(tableId)) {
+                    document.getElementById(tableId).textContent = `Tithi / तिथि: ${prefix} – ${t}`;
+                }
+            });
+        }
+
+        function updateCeremonyTimings() {
+            const mandapTime = document.getElementById('custMandapTime').value || '04:00 PM';
+            const haldiTime = document.getElementById('custHaldiTime').value || '10:00 AM';
+            const mehndiTime = document.getElementById('custMehndiTime').value || '12:00 PM';
+            const mantriTime = document.getElementById('custMantriTime').value || '04:00 PM';
+
+            // Update Event 2 (Maati-Mangar & Mandap)
+            document.getElementById('pill2Time').textContent = `Mon, 30 Nov 2026 • Time: ${mandapTime}`;
+            document.getElementById('scene3Time').textContent = `Time / समय: ${mandapTime}`;
+            document.getElementById('card2Time').innerHTML = `<strong>Time / समय: <span class="text-emerald-200 text-base">${mandapTime}</span></strong><br><span class="font-hindi text-xs text-emerald-100/90">माटीमागर एवं मण्डप</span>`;
+            document.getElementById('table2Time').innerHTML = `<strong>Time / समय:</strong> <span class="px-2 py-0.5 rounded bg-emerald-500/20 border border-emerald-400/40 text-emerald-200 font-bold">${mandapTime}</span>`;
+
+            // Update Event 3 (Haldi, Mehndi & Mantri Pooja)
+            document.getElementById('pill3Timings').innerHTML = `
+                <span class="px-2.5 py-1 rounded-lg bg-amber-400/20 border border-amber-300/40 text-amber-200 font-semibold">🌼 Haldi (हल्दी) — Time: ${haldiTime}</span>
+                <span class="px-2.5 py-1 rounded-lg bg-emerald-400/20 border border-emerald-300/40 text-emerald-200 font-semibold">🌿 Mehndi (मेहंदी) — Time: ${mehndiTime}</span>
+                <span class="px-2.5 py-1 rounded-lg bg-royal-gold/25 border border-royal-gold/50 text-royal-goldLight font-semibold">🪔 Mantri Pooja (मंत्रीपूजा) — Time: ${mantriTime}</span>
+            `;
+
+            document.getElementById('scene4TimeBlock').innerHTML = `
+                <p class="text-[10px] uppercase tracking-wider text-amber-300 font-semibold">Time / समय:</p>
+                <div class="flex items-center justify-between text-[11px] bg-amber-500/20 px-2.5 py-1 rounded border border-amber-300/35">
+                    <span class="font-hindi text-amber-200 font-medium">🌼 Haldi (हल्दी):</span>
+                    <span class="font-bold text-white">${haldiTime}</span>
+                </div>
+                <div class="flex items-center justify-between text-[11px] bg-emerald-500/20 px-2.5 py-1 rounded border border-emerald-300/35">
+                    <span class="font-hindi text-emerald-200 font-medium">🌿 Mehndi (मेहंदी):</span>
+                    <span class="font-bold text-white">${mehndiTime}</span>
+                </div>
+                <div class="flex items-center justify-between text-[11px] bg-royal-gold/25 px-2.5 py-1 rounded border border-royal-gold/45">
+                    <span class="font-hindi text-royal-goldLight font-medium">🪔 Mantri Pooja (मंत्रीपूजा):</span>
+                    <span class="font-bold text-white">${mantriTime}</span>
+                </div>
+            `;
+
+            document.getElementById('card3Time').innerHTML = `
+                <p class="font-semibold text-white">Time / समय:</p>
+                <div class="grid grid-cols-1 gap-1.5 text-xs">
+                    <div class="px-3 py-1.5 rounded-xl bg-amber-400/20 border border-amber-300/40 text-amber-200 flex items-center justify-between">
+                        <span>🌼 <strong>Haldi (हल्दी):</strong></span>
+                        <strong class="text-white">${haldiTime}</strong>
+                    </div>
+                    <div class="px-3 py-1.5 rounded-xl bg-emerald-400/20 border border-emerald-300/40 text-emerald-200 flex items-center justify-between">
+                        <span>🌿 <strong>Mehndi (मेहंदी):</strong></span>
+                        <strong class="text-white">${mehndiTime}</strong>
+                    </div>
+                    <div class="px-3 py-1.5 rounded-xl bg-royal-gold/25 border border-royal-gold/50 text-royal-goldLight flex items-center justify-between">
+                        <span>🪔 <strong>Mantri Pooja (मंत्रीपूजा):</strong></span>
+                        <strong class="text-white">${mantriTime}</strong>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('table3Time').innerHTML = `
+                <strong>Time / समय:</strong>
+                <div class="flex flex-wrap gap-2 mt-1">
+                    <span class="px-2.5 py-1 rounded-lg bg-amber-400/20 border border-amber-300/45 text-amber-200 font-bold">🌼 Haldi (हल्दी): ${haldiTime}</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-emerald-400/20 border border-emerald-300/45 text-emerald-200 font-bold">🌿 Mehndi (मेहंदी): ${mehndiTime}</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-royal-gold/25 border border-royal-gold/50 text-royal-goldLight font-bold">🪔 Mantri Pooja (मंत्रीपूजा): ${mantriTime}</span>
+                </div>
+            `;
+        }
+
+        function applyTheme(theme) {
+            const root = document.documentElement;
+            if (theme === 'emerald') {
+                root.style.setProperty('--bg-primary', '#04261B');
+                root.style.setProperty('--bg-secondary', '#093D2B');
+            } else if (theme === 'ivoryrose') {
+                root.style.setProperty('--bg-primary', '#38101C');
+                root.style.setProperty('--bg-secondary', '#591B2D');
+            } else {
+                root.style.setProperty('--bg-primary', '#2D070D');
+                root.style.setProperty('--bg-secondary', '#4A0E17');
+            }
+        }
+
+        function resetCustomizer() {
+            document.getElementById('custGroom').value = 'Ashutosh';
+            document.getElementById('custBride').value = 'Akanksha';
+            document.getElementById('custMonogram').value = 'A & A';
+            document.getElementById('custHashtag').value = '#AshuKiAkanksha';
+            document.getElementById('custPakshaPrefix').value = 'अगहन (मार्गशीर्ष) कृष्ण पक्ष';
+            document.getElementById('custMandapTime').value = '04:00 PM';
+            document.getElementById('custHaldiTime').value = '10:00 AM';
+            document.getElementById('custMehndiTime').value = '12:00 PM';
+            document.getElementById('custMantriTime').value = '04:00 PM';
+            applyTheme('crimson');
+            updateLiveTemplate();
+            updatePakshaWording();
+            updateCeremonyTimings();
+        }
+
+        // Calendar (.ICS) helpers. The all-events file uses India Standard Time.
+        function icsEscape(value) {
+            return String(value || '').replace(/\\/g, '\\\\').replace(/\r?\n/g, '\\n').replace(/,/g, '\\,').replace(/;/g, '\\;');
+        }
+
+        function downloadAllWeddingEventsICS() {
+            const events = [
+                { title: 'Tilakotsav & Preetibhoj - Ashutosh & Akanksha', start: '20261126T190000', end: '20261126T220000', location: 'Sangam Marriage Garden, Rewa-Satna Road, Bahelia Bhat, Satna', description: 'अगहन (मार्गशीर्ष) कृष्ण पक्ष – तृतीया. Guests invited from 7:00 PM onwards.' },
+                { title: 'Maati-Mangar & Mandap - Ashutosh & Akanksha', start: '20261130T160000', end: '20261130T200000', location: 'Family Residence, Village Devra, Satna', description: 'अगहन (मार्गशीर्ष) कृष्ण पक्ष – सप्तमी. Ceremony begins at 4:00 PM.' },
+                { title: 'Haldi, Mehndi & Mantri Pooja - Ashutosh & Akanksha', start: '20261201T100000', end: '20261201T190000', location: 'Family Residence, Village Devra, Satna', description: 'अगहन (मार्गशीर्ष) कृष्ण पक्ष – अष्टमी. Haldi: 10:00 AM; Mehndi: 12:00 PM; Mantri Pooja: 4:00 PM.' },
+                { title: 'Shubh Vivah - Ashutosh & Akanksha', start: '20261202T180000', end: '20261203T020000', location: 'Venkatesh Vatika, Muktiyarganj, Satna', description: 'अगहन (मार्गशीर्ष) कृष्ण पक्ष – नवमी. Barat departs at 6:00 PM from the family residence; wedding celebrations follow.' },
+                { title: 'Vadhu Pravesh - Ashutosh & Akanksha', allDay: true, start: '20261203', end: '20261204', location: 'Family Residence, Village Devra, Satna', description: 'अगहन (मार्गशीर्ष) कृष्ण पक्ष – दशमी. Ceremony time: as per the auspicious muhurat.' }
+            ];
+            const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+            const lines = [
+                'BEGIN:VCALENDAR', 'VERSION:2.0', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+                'PRODID:-//Ashutosh Weds Akanksha//Wedding Invitation//EN',
+                'X-WR-CALNAME:Ashutosh & Akanksha Wedding Events',
+                'X-WR-TIMEZONE:Asia/Kolkata',
+                'BEGIN:VTIMEZONE', 'TZID:Asia/Kolkata', 'X-LIC-LOCATION:Asia/Kolkata',
+                'BEGIN:STANDARD', 'TZOFFSETFROM:+0530', 'TZOFFSETTO:+0530', 'TZNAME:IST', 'DTSTART:19700101T000000', 'END:STANDARD', 'END:VTIMEZONE'
+            ];
+            events.forEach((event, index) => {
+                lines.push('BEGIN:VEVENT', `UID:ashutosh-akanksha-wedding-${index + 1}@invitation`, `DTSTAMP:${stamp}`, `SUMMARY:${icsEscape(event.title)}`);
+                if (event.allDay) {
+                    lines.push(`DTSTART;VALUE=DATE:${event.start}`, `DTEND;VALUE=DATE:${event.end}`);
+                } else {
+                    lines.push(`DTSTART;TZID=Asia/Kolkata:${event.start}`, `DTEND;TZID=Asia/Kolkata:${event.end}`);
+                }
+                lines.push(`LOCATION:${icsEscape(event.location)}`, `DESCRIPTION:${icsEscape(event.description)}`, 'END:VEVENT');
+            });
+            lines.push('END:VCALENDAR');
+            const blob = new Blob([lines.join('\r\n') + '\r\n'], { type: 'text/calendar;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'Ashutosh_Akanksha_All_Wedding_Events.ics';
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+            setTimeout(() => URL.revokeObjectURL(url), 1000);
+        }
+
+        // Calendar (.ICS) Download Helper for individual event cards
+        function downloadICS(title, startStr, endStr, location, description) {
+            const icsContent = [
+                'BEGIN:VCALENDAR',
+                'VERSION:2.0',
+                'PRODID:-//Ashutosh Weds Akanksha//Wedding Invite//EN',
+                'BEGIN:VEVENT',
+                `SUMMARY:${title}`,
+                `DTSTART:${startStr}`,
+                `DTEND:${endStr}`,
+                `LOCATION:${location}`,
+                `DESCRIPTION:${description}`,
+                'END:VEVENT',
+                'END:VCALENDAR'
+            ].join('\r\n');
+
+            const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `${title.replace(/\s+/g, '_')}.ics`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // WhatsApp Invitation Share
+        function shareOnWhatsApp() {
+            const text = `॥ श्री गणेशाय नमः ॥\n*ASHUTOSH WEDS AKANKSHA* (#AshuKiAkanksha)\n\nWe cordially invite you & your family to the auspicious wedding celebrations:\n\n1️⃣ *Tilakotsav & Preetibhoj*: Thu, 26 Nov 2026 (अगहन (मार्गशीर्ष) कृष्ण पक्ष – तृतीया; द्वितीया समाप्ति 1:15 PM) | 7:00 PM onwards | Sangam Marriage Garden, Rewa–Satna Road, Bahelia Bhat, Satna\n2️⃣ *Maati-Mangar & Mandap*: Mon, 30 Nov 2026 (अगहन (मार्गशीर्ष) कृष्ण पक्ष – सप्तमी) | Time: 04:00 PM\n3️⃣ *Mantri Pooja, Haldi & Mehndi*: Tue, 1 Dec 2026 (अगहन (मार्गशीर्ष) कृष्ण पक्ष – अष्टमी) | Haldi: 10:00 AM, Mehndi: 12:00 PM, Mantri Pooja: 04:00 PM\n4️⃣ *Shubh Vivah*: Wed, 2 Dec 2026 (अगहन (मार्गशीर्ष) कृष्ण पक्ष – नवमी) | Barat departs at 6:00 PM | Venue: Venkatesh Vatika, Muktiyarganj, Satna\n5️⃣ *Vadhu Pravesh*: Thu, 3 Dec 2026 (अगहन (मार्गशीर्ष) कृष्ण पक्ष – दशमी) | Family residence, Village: Devra, Satna`;
+            window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        // Floating Gold Dust & Marigold Petal Canvas Animation
+        function initPetalCanvas() {
+            const canvas = document.getElementById('petalCanvas');
+            const ctx = canvas.getContext('2d');
+            let width = canvas.width = window.innerWidth;
+            let height = canvas.height = window.innerHeight;
+
+            window.addEventListener('resize', () => {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            });
+
+            const particles = Array.from({ length: window.matchMedia("(max-width: 639px)").matches ? 16 : 30 }, () => ({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                r: Math.random() * 2.8 + 1,
+                speedY: Math.random() * 0.55 + 0.2,
+                speedX: (Math.random() - 0.5) * 0.4,
+                alpha: Math.random() * 0.65 + 0.2
+            }));
+
+            let animationFrame;
+            function draw() {
+                if (document.hidden || window.matchMedia('(prefers-reduced-motion: reduce)').matches) { animationFrame = requestAnimationFrame(draw); return; }
+                ctx.clearRect(0, 0, width, height);
+                particles.forEach(p => {
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(212, 175, 55, ${p.alpha})`;
+                    ctx.fill();
+
+                    p.y += p.speedY;
+                    p.x += p.speedX;
+                    if (p.y > height) {
+                        p.y = -10;
+                        p.x = Math.random() * width;
+                    }
+                });
+                animationFrame = requestAnimationFrame(draw);
+            }
+            draw();
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            openPalaceGates();
+            renderScene(0);
+            startPlayerLoop();
+            startCountdown();
+            initPetalCanvas();
+            const glow = document.getElementById('cursorGlow');
+            if (glow && window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
+                window.addEventListener('pointermove', (event) => {
+                    glow.style.left = event.clientX + 'px';
+                    glow.style.top = event.clientY + 'px';
+                }, { passive: true });
+            }
+        });
+    </script>
+</body>
+</html>
